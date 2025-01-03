@@ -23,6 +23,14 @@ Or you use the datasets created on Kaggle for the sake of this project (recommen
 2. To train the double-LSTM PhyDNet model, copy paste the file `./kaggle/phyd_double_lstm.ipynb` on this dataset project:  https://www.kaggle.com/datasets/lounsmh/mnist-dataset
 
 ## Usage
+
+First, download MNIST and MovingMNIST datasets:
+```bach
+cd data/
+wget http://www.cs.toronto.edu/~nitish/unsupervised_video/mnist_test_seq.npy
+wget https://github.com/hamlinzheng/mnist/raw/master/dataset/train-images-idx3-ubyte.gz
+```
+
 To generate predictions, you can use the provided pertained models in the folder `./save`.
 
 To make predictions on MovingMNIST using PhyDNet:
